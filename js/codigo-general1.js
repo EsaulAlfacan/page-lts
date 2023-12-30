@@ -185,7 +185,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Marcar boletos como vendidos al inicio
   marcarBotonesPorNumeros([
     // Lista de números de boletos vendidos
-    "00000", "00004", "00005", "00009", "10569"
+    "00000", "00004", "00005", "00009", "00029",
+    "00090", "00014", "00015", "00019", "00069",
+
   ]);
 
   // Ocultar overlay después de 2 segundos
