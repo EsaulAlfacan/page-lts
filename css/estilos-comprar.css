@@ -1,0 +1,779 @@
+/*RESETEO DE LOS PARGENES INTERIORES Y EXTERIORES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*ATRIBUTOS GENERALES PREESTABLECIDOS*/
+
+:root {
+    --color-rojo: #3B732C;
+    /*COLOR REAL #f20519*/
+    --color-naranja: #3B732C;
+    /*COLOR REAL #f25c05*/
+    --color-amarillo-obscuro: #81A677;
+    /*COLOR REAL #f2ab27*/
+    --color-amarillo-claro: #D96523;
+    /*COLOR REAL #f2cb05*/
+    --color-blanco: #F2F2F2;
+    /*COLOR REAL #d2d2d2*/
+    --color-negro: #0D0D0D;
+    /*COLOR REAL #020202*/
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    ;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+.inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-inicial {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-naranja);
+    padding: 5rem;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.titulo-inicial h5 {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.inicial img {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+}
+
+.contenedor-info {
+    font-size: 2.5em;
+    text-align: center;
+    background-color: var(--color-amarillo-claro);
+    padding: 2em;
+}
+
+.costo-boletos {
+    font-size: 2.8em;
+    padding: 3rem 5rem;
+    text-align: center;
+    background-color: var(--color-amarillo-obscuro);
+}
+
+.titulo-lista {
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--color-amarillo-obscuro);
+    padding: .5em .5em;
+}
+
+.span-titulo-lista {
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+/*ESTILOS PARA EL INPUT*/
+input {
+    margin-left: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border: 2px solid var(--color-naranja);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--color-negro);
+    background-color: var(--color-blanco);
+    width: 60%;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: center;
+}
+
+input#numero:focus {
+    border-color: var(--color-rojo);
+}
+
+/*ESTILOS DEL BOTON DE MAQUINIA*/
+.menu-cantidad {
+    display: none;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--color-blanco);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-cantidad ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-cantidad li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-cantidad li:hover {
+    background-color: var(--color-amarillo-claro);
+}
+
+.contenedor-boletos {
+    text-align: center;
+}
+
+/* Estilos para el botón */
+.contenedor-boton {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.boton-estilizado {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Cambiar el estilo cuando el botón está en hover */
+.boton-estilizado:hover {
+    background-color: var(--color-rojo);
+}
+
+
+/* Estilo para el encabezado */
+.encabezado-boletos {
+    margin-top: 40px;
+    background: linear-gradient(to bottom right, var(--color-rojo), var(--color-naranja));
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    border-radius: 20px;
+    border: 2px solid var(--color-amarillo-obscuro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Estilo para la sección lista-boletos */
+.lista-boletos {
+    width: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+    border: 3px solid var(--color-negro);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo para los botones de boletos */
+#lista-de-boletos button {
+    flex: 1;
+    width: calc(100% / 7);
+    padding: 5px;
+    background-color: var(--color-blanco);
+    color: var(--color-naranja);
+    border: none;
+    cursor: pointer;
+}
+
+#lista-de-boletos button:hover {
+    background-color: var(--color-naranja);
+    color: var(--color-negro);
+}
+
+/* Estilo personalizado para la barra de desplazamiento (WebKit) */
+.lista-boletos::-webkit-scrollbar {
+    width: 25px;
+}
+
+.lista-boletos::-webkit-scrollbar-track {
+    background: var(--color-amarillo-obscuro);
+    border-radius: 10px;
+}
+
+.lista-boletos::-webkit-scrollbar-thumb {
+    background: var(--color-amarillo-claro);
+    border-radius: 10px;
+}
+
+.lista-boletos::-webkit-scrollbar-thumb:hover {
+    background: var(--color-naranja);
+}
+
+
+/* Estilo para el contenedor principal (puedes ajustar el nombre según tu estructura HTML) */
+#contenedor-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el contenedor principal (puedes ajustar el nombre según tu estructura HTML) */
+#contenedor-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#cargar-mas::before {
+    content: "\f065";
+    /* Agrega un ícono, ajusta este valor según el icono que desees */
+    font-family: "FontAwesome";
+    /* Utiliza una fuente de iconos (por ejemplo, FontAwesome) */
+    font-size: 24px;
+    margin-right: 10px;
+    /* Espacio entre el ícono y el texto */
+}
+
+/* Estilos para la sección de boletos-buscados */
+.boletos-buscados {
+    margin-top: 20px;
+    background-color: var(--color-amarillo-claro);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lista-de-boletos-buscados {
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 85%;
+    margin: 5px;
+    height: auto;
+    overflow: auto;
+
+}
+
+.lista-de-boletos-buscados button {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lista-de-boletos-buscados button:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-naranja);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Estilos para la sección de boletos-seleccionados */
+/* Estilos para el botón "COMPRAR YA!" */
+/* Estilos para el botón "COMPRAR YA!" */
+
+.boletos-seleccionados {
+    width: auto;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.boletos-seleccionados button {
+    margin-top: 10PX;
+    background-color: green;
+    color: var(--color-blanco);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.boletos-seleccionados button:hover {
+    color: var(--color-negro);
+    background-color: var(--color-blanco);
+    transform: scale(1.05);
+    /* Efecto de escala al pasar el ratón por encima */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra suave al pasar el ratón por encima */
+}
+
+.boletos-seleccionados button:active {
+    transform: scale(0.95);
+    /* Efecto de escala al hacer clic */
+}
+
+
+.boletos-seleccionados {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-top: 20px;
+    background-color: var(--color-negro);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra horizontal y verticalmente */
+}
+
+.boletos-seleccionados h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: var(--color-blanco);
+}
+
+.lista-de-boletos-seleccionados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.lista-de-boletos-seleccionados button {
+    background-color: var(--color-amarillo-claro);
+    /* Personaliza el color de fondo */
+    color: var(--color-negro);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el botón seleccionado */
+.lista-de-boletos-seleccionados button:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+
+}
+
+/* Estilos para la sección deseos */
+.deseos {
+    margin-top: 15px;
+    background-color: var(--color-amarillo-obscuro);
+    padding: 20px;
+    text-align: center;
+    font-size: 2.8em;
+}
+
+.deseos h3 {
+    font-size: 24px;
+    color: var(--color-negro);
+}
+
+.deseos h4 {
+    font-size: 18px;
+    color: var(--color-blanco);
+    margin-top: 10px;
+}
+
+.deseos a {
+    color: var(--color-rojo);
+    text-decoration: none;
+}
+
+.deseos a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el contenedor de datos de entrada */
+.contener-daotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    background-color: var(--color-blanco);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/* Opcional: Estilos para los labels e inputs */
+label {
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input,
+select {
+    padding: 5px;
+    margin: 1px;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-negro);
+    color: var(--color-negro);
+}
+
+/* Estilos específicos para el botón de selección */
+select {
+    width: 80%;
+    /* Ancho completo */
+    border-radius: 10px;
+}
+
+/* Estilos para las opciones del select */
+option {
+    color: var(--color-negro);
+    /* Texto en color negro */
+}
+
+/* Estilos para el botón de selección cuando se abre */
+select:focus {
+    outline: none;
+    /* Elimina el contorno al hacer foco */
+    border: 1px solid var(--color-rojo);
+    /* Cambia el borde al hacer foco */
+}
+
+
+
+.boton-boleto-seleccionado {
+    color: var(--color-rojo);
+    /* Aplicar color rojo */
+}
+
+
+/* Estilos para la sección btn-recarga */
+.btn-recarga {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Estilos para el botón "Actualizar lista de boletos" */
+.btn-recarga button {
+    background-color: var(--color-amarillo-obscuro);
+    /* Utiliza la variable de color amarillo obscuro */
+    color: var(--color-negro);
+    /* Utiliza la variable de color negro para el texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    /* Establece la fuente Montserrat para el botón */
+    font-weight: 600;
+    /* Establece el peso de la fuente en 600 (negrita) */
+}
+
+/* Estilos al pasar el mouse por encima del botón */
+.btn-recarga button:hover {
+    background-color: var(--color-amarillo-claro);
+    /* Utiliza la variable de color amarillo claro al pasar el mouse */
+}
+
+
+/*ALERTA CARGA DE BOTONES LISTA*/
+#overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(255, 255, 255, .95);
+    z-index: 9999;
+}
+
+.overlay-title {
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: var(--color-rojo);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 23px;
+    margin-top: -100vh;
+}
+
+.overlay-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay-message {
+    width: 50px;
+    aspect-ratio: 1;
+    color: #000;
+    border: 5px solid var(--color-rojo);
+    display: grid;
+    box-sizing: border-box;
+    animation: l1 4s infinite linear;
+
+}
+
+.overlay-message::before,
+.overlay-message::after {
+    content: "";
+    grid-area: 1/1;
+    margin: auto;
+    width: 70.7%;
+    aspect-ratio: 1;
+    border: 5px solid var(--color-rojo);
+    box-sizing: content-box;
+    animation: inherit;
+}
+
+.overlay-message::after {
+    width: 50%;
+    aspect-ratio: 1;
+    border: 5px solid var(--color-rojo);
+    animation-duration: 2s;
+}
+
+.boton-boleto-marcado {
+    background-color: red;
+    color: red;
+}
+
+
+
+@keyframes l1 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+
+
+/*APARTIR DE AQUI SE GENERAN LAS MEDIA QUERYS*/
+
+
+@media (max-width:600px) {
+
+    .titulo-inicial {
+        height: auto;
+        background-color: var(--color-naranja);
+        padding: 3rem;
+        text-align: center;
+        font-size: 1.5em;
+
+    }
+
+    .inicial img {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        max-width: 75%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15%;
+    }
+
+    .contenedor-info {
+        font-size: 2.2em;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+        padding: 1em;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media (max-width:500px) {
+
+    .titulo-inicial {
+        height: auto;
+        background-color: var(--color-naranja);
+        padding: 2rem;
+        text-align: center;
+        font-size: 1.2em;
+
+    }
+
+    .inicial img {
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+        max-width: 75%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10%;
+    }
+
+    .contenedor-info {
+        font-size: 2em;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+        padding: .8em;
+    }
+
+    .costo-boletos {
+        font-size: 1.5em;
+    }
+
+    .titulo-lista {
+        font-size: 1.2em;
+    }
+
+    .encabezado-boletos {
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    .titulo-inicial {
+        height: auto;
+        background-color: var(--color-naranja);
+        padding: 1.7rem;
+        text-align: center;
+        font-size: 1em;
+
+    }
+
+    .inicial img {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        max-width: 75%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7%;
+    }
+
+    .contenedor-info {
+        font-size: 1.6em;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+        padding: .3em;
+    }
+
+    .costo-boletos {
+        font-size: 1.2em;
+        padding: .4em;
+    }
+
+    .titulo-lista {
+        font-size: 1em;
+    }
+
+    .encabezado-boletos {
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    .titulo-inicial {
+        height: auto;
+        background-color: var(--color-naranja);
+        padding: 1.7rem;
+        text-align: center;
+        font-size: 1em;
+
+    }
+
+    .inicial img {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        max-width: 75%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7%;
+    }
+
+    .contenedor-info {
+        font-size: 1.6em;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+        padding: .3em;
+    }
+
+    .costo-boletos {
+        font-size: 1.2em;
+        padding: .4em;
+    }
+
+    .titulo-lista {
+        font-size: 1em;
+    }
+
+    .encabezado-boletos {
+        font-size: .9em;
+    }
+
+}
+
+
+@media (max-width:350px) {
+    .lista-boletos button {
+        font-size: 9px;
+    }
+}
+
+@media (max-width:260px) {
+    .lista-boletos button {
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,474 @@
+/*RESETEO DE LOS PARGENES INTERIORES Y EXTERIORES*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*ATRIBUTOS GENERALES PREESTABLECIDOS*/
+:root{
+    --color-rojo: #f20519 ;
+    --color-naranja: #f25c05 ;
+    --color-amarillo-obscuro: #f2ab27 ;
+    --color-amarillo-claro: #f2cb05 ;
+    --color-blanco: #d2d2d2 ;
+    --color-negro: #020202 ;
+}
+
+body {
+    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+
+/*COMIENZAN LOS ESTILOS DE LA SECCION*/
+header{
+    width: 100%;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-amarillo-claro);
+}
+
+header div{
+    margin-left: 10%;
+    border-radius: 0 0 100px 100px;
+    width: 80%;
+    background-color: var(--color-amarillo-obscuro);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    
+}
+
+header img{
+    height: 350px;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 80px;
+    padding: 10px;
+    background: linear-gradient(45deg, var(--color-negro), transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border-radius: 0 0 150px 150px;
+    background-color: var(--color-rojo);
+}
+
+.nav-label img{
+    height: 45px;
+}
+
+/*COMIENZAN LAS MEDIA QUERIES
+1500px
+1200px
+960px
+650px
+550px
+500px
+450px
+400px
+280px
+220px
+/*
+
+/*PARA UN WIDTH MAXIMO DE 1500PX*/
+@media (max-width: 1500px) {
+    header {
+        width: 100%;
+        height: 450PX;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 100px 100px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    }
+
+    header img {
+        height: 250PX;
+        padding: 30px;
+    }
+
+    header h1 {
+        font-size: 60PX;
+        padding: 10px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}
+
+/*PARA UN WIDTH MAXIMO DE 1200PX*/
+@media (max-width: 1200px) {
+    header {
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 100px 100px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    }
+
+    header img {
+        height: 150px;
+        padding: 35px;
+    }
+
+    header h1 {
+        font-size: 50px;
+        padding: 15px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}
+
+/*PARA UN WIDTH MAXIMO DE 1200PX*/
+@media (max-width: 1200px) {
+    header {
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 100px 100px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    }
+
+    header img {
+        height: 150px;
+        padding: 35px;
+    }
+
+    header h1 {
+        font-size: 50px;
+        padding: 15px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}
+
+/*PARA UN WIDTH MAXIMO DE 960px*/
+@media (max-width: 960px) {
+    header {
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 100px 100px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    }
+
+    header img {
+        height: 130px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        padding: 15px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}
+
+/*PARA UN WIDTH MAXIMO DE 650px*/
+@media (max-width: 650px) {
+    header {
+        width: 100%;
+        height: 270px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 70px 70px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    }
+
+    header img {
+        height: 140px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+        padding: 15px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}
+
+/*PARA UN WIDTH MAXIMO DE 550px*/
+@media (max-width: 550px) {
+    header {
+        width: 100%;
+        height: 230px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 60px 60px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    }
+
+    header img {
+        height: 100px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+        padding: 15px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}
+
+/*PARA UN WIDTH MAXIMO DE 500px*/
+@media (max-width: 500px) {
+    header {
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 60px 60px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); 
+    }
+
+    header img {
+        height: 100px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        padding: 15px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}
+
+/*PARA UN WIDTH MAXIMO DE 500*/
+@media (max-width: 450px) {
+    header {
+        width: 100%;
+        height: 180px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 30px 30px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    }
+
+    header img {
+        height: 90px;
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        padding: 15px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}
+
+/*PARA UN WIDTH MAXIMO DE 500px*/
+@media (max-width: 400px) {
+    header {
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 10px 10px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    }
+
+    header img {
+        height: 70px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+        padding: 15px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}
+
+/*PARA UN WIDTH MAXIMO DE 280px*/
+@media (max-width: 280px) {
+    header {
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 10px 10px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    }
+
+    header img {
+        height: 50px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        padding: 15px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}
+
+/*PARA UN WIDTH MAXIMO DE 240px*/
+@media (max-width: 240px) {
+    header {
+        width: 100%;
+        height: 140px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-amarillo-claro);
+    }
+
+    header div {
+        margin-left: 10%;
+        border-radius: 0 0 10px 10px;
+        width: 80%;
+        background-color: var(--color-amarillo-obscuro);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Añade un brillo blanco */
+    }
+
+    header img {
+        height: 50px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 17px;
+        padding: 1px;
+        background: linear-gradient(45deg, var(--color-negro), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border-radius: 0 0 150px 150px;
+        background-color: var(--color-rojo);
+    }
+}

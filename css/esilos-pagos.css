@@ -1,0 +1,277 @@
+/*RESETEO DE LOS PARGENES INTERIORES Y EXTERIORES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*ATRIBUTOS GENERALES PREESTABLECIDOS*/
+:root {
+    --color-rojo: #3B732C;
+    /*COLOR REAL #f20519*/
+    --color-naranja: #3B732C;
+    /*COLOR REAL #f25c05*/
+    --color-amarillo-obscuro: #81A677;
+    /*COLOR REAL #f2ab27*/
+    --color-amarillo-claro: #D96523;
+    /*COLOR REAL #f2cb05*/
+    --color-blanco: #F2F2F2;
+    /*COLOR REAL #d2d2d2*/
+    --color-negro: #0D0D0D;
+    /*COLOR REAL #020202*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    ;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+
+
+.anuncio {
+    width: 100%;
+    height: auto;
+}
+
+.anuncio h1 {
+    text-align: center;
+    height: auto;
+    font-size: 3rem;
+    background-color: var(--color-amarillo-obscuro);
+    padding: 15px;
+}
+
+.anuncio p {
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--color-amarillo-claro);
+    height: auto;
+    padding: 10px;
+}
+
+.anuncio h2 {
+    background-color: var(--color-naranja);
+    text-align: center;
+    height: auto;
+    font-size: 2.2rem;
+    padding: 10px 30px;
+}
+
+.anuncio a {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/*CODIGO RECICLADO DE LA SACCION DE PREGUNTAS*/
+/*RESETEO DE LOS PARGENES INTERIORES Y EXTERIORES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .Pagos {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+    z-index: -50;
+}
+
+.contenedor-preguntas {
+    margin: 40px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenedor-preguntas h1 {
+    color: var(--color-negro);
+}
+
+.contenedor-preguntas .tab {
+    position: relative;
+    background-color: var(--color-blanco);
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px var(--color-negro);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contenedor-preguntas .tab input {
+    appearance: none;
+
+}
+
+.contenedor-preguntas .tab label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.contenedor-preguntas .tab label::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color: var(--color-negro);
+    transition: transform 1s;
+}
+
+.contenedor-preguntas .tab:hover label::after {
+    color: var(--color-negro);
+}
+
+.contenedor-preguntas .tab input:checked~label::after {
+    transform: rotate(135deg);
+    color: #fff;
+}
+
+
+.contenedor-preguntas .tab label h2 {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blanco);
+    border-radius: 5px;
+    font-size: 1.25em;
+    margin-right: 10px;
+}
+
+.contenedor-preguntas .tab input:checked~label h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255, 0.2);
+    font-size: 8em;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.contenedor-preguntas .tab:nth-child(2) label h2 {
+    background: linear-gradient(135deg, #ff0000, #913636);
+}
+
+.contenedor-preguntas .tab:nth-child(3) label h2 {
+    background: linear-gradient(135deg, #cead1c, #977f14);
+}
+
+.contenedor-preguntas .tab:nth-child(4) label h2 {
+    background: linear-gradient(135deg, #38297a, #5a4d0e);
+}
+
+.contenedor-preguntas .tab:nth-child(5) label h2 {
+    background: linear-gradient(135deg, #ff3e25, #99872e);
+}
+
+.contenedor-preguntas .tab:nth-child(6) label h2 {
+    background: linear-gradient(135deg, #566804, #99872e);
+}
+
+.contenedor-preguntas .tab:nth-child(7) label h2 {
+    background: linear-gradient(135deg, #209425, #99872e);
+}
+
+.contenedor-preguntas .tab label h3 {
+    position: relative;
+    font-weight: var(--color-negro);
+    z-index: 1;
+}
+
+.contenedor-preguntas .tab label h3 {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2px 10px;
+    color: var(--color-negro);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+    text-align: center;
+}
+
+.contenedor-preguntas .tab .contenido {
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.contenedor-preguntas .tab input:checked~.contenido {
+    max-height: 100vh;
+}
+
+.contenedor-preguntas .tab .contenido p {
+    position: relative;
+    padding: 10px 0;
+    color: var(--color-negro);
+}
+
+.contenedor-preguntas .tab input:checked~.contenido p {
+    color: var(--color-blanco);
+}
+
+.contenido a {
+    text-decoration: none;
+    color: var(--color-negro);
+    background-color: var(--color-blanco);
+    border-radius: 4px;
+}
+
+.privacidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+    max-height: 450px;
+    overflow-y: auto;
+    font-size: 25px;
+    background-color: var(--color-blanco);
+}
+
+.privacidad h3 {
+    margin-top: 1150px;
+}
+
+
+.privacidad h4 {
+    text-align: center;
+}
+
+.privacidad p {
+    text-align: justify;
+}
+
+.privacidad span {
+
+    text-decoration: underline;
+    color: var(--color-naranja);
+}

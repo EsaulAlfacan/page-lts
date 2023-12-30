@@ -1,0 +1,73 @@
+/*ENCABEZADO DE IDPATS///////////////////////////////////////////////////////////////////*/
+.encabezado-idpats {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-negro);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.link-idpats {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.letras .letras-individual span {
+    font-family: 'Neutron';
+    color: var(--color-blanco);
+    font-size: 45px;
+}
+
+/*PIE DE PAGINA ///////////////////////////////////////////////////////////////////////////*/
+footer {
+    margin-top: 30px;
+
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.desarrollado {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+footer .link-ga {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #37a652;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.link-ga a img {
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: var(--color-blanco);
+    border-radius: 5px;
+}
+
+@media (max-width:265px) {
+    .link-ga a img {
+        height: 40px;
+        padding: 10px;
+        margin-top: 5px;
+        background-color: var(--color-blanco);
+        border-radius: 5px;
+    }
+}

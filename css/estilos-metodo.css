@@ -1,0 +1,219 @@
+/*RESETEO DE LOS PARGENES INTERIORES Y EXTERIORES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*ATRIBUTOS GENERALES PREESTABLECIDOS*/
+:root{
+    --color-rojo: #3B732C ; /*COLOR REAL #f20519*/
+    --color-naranja: #3B732C ; /*COLOR REAL #f25c05*/
+    --color-amarillo-obscuro: #81A677 ; /*COLOR REAL #f2ab27*/
+    --color-amarillo-claro: #D96523 ; /*COLOR REAL #f2cb05*/
+    --color-blanco: #F2F2F2 ; /*COLOR REAL #d2d2d2*/
+    --color-negro: #0D0D0D ; /*COLOR REAL #020202*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*AQUÍ INICIAN LOS ESTILOS DE ESTA SECION*/
+
+.titulo-principal{
+    font-size: 1.5rem;
+    text-align: center;    width: 100%;
+    padding: 20px 10px;
+    height: auto;
+    background-color: var(--color-blanco);
+}
+
+
+main{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pasoa{
+margin-left: 8%;
+    margin-top: 30px;
+    background-color: #020202;
+    height: auto;
+    width: 85%;
+    border-radius: 10px;
+}
+.pasoa h3{
+    padding: 5px;
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--color-amarillo-obscuro);
+    width: 100%;
+    border-radius: 10px 0 0;
+}
+
+.pasoa p{
+    color: var(--color-blanco);
+    text-align: justify;
+    padding: 30px;
+}
+
+.pasob{
+    margin-left: 8%;
+        margin-top: 30px;
+        background-color: var(--color-amarillo-obscuro);
+        height: auto;
+        width: 85%;
+        border-radius: 10px;
+    }
+
+.pasob h3{
+        padding: 5px;
+        font-size: 2rem;
+        text-align: center;
+        background-color: var(--color-negro);
+        width: 100%;
+        border-radius: 10px 0 0;
+        color: var(--color-blanco);
+    }
+    
+.pasob p{
+        color: var(--color-negro);
+        text-align: justify;
+        padding: 30px;
+    }
+
+
+.imagen-ejemplo{
+    background-color: var(--color-amarillo-claro);
+    border-radius: 50px;
+
+}
+
+.importante{
+    color: var(--color-amarillo-claro);
+    font-size: 150px;
+}
+
+
+.imagen-ejemplo img{
+    padding: 20px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+.imagen-ejemplo p{
+    padding: 40px;
+}
+
+main a{
+    background-color: var(--color-naranja);
+    text-decoration: none;
+    color: var(--color-blanco);
+    border-radius: 3px;
+}
+
+/*INICIAN LAS MEDIA QUERYS*/
+@media (max-width:850px) {
+
+    .importante{
+        color: var(--color-amarillo-claro);
+        font-size: 110px;
+    }
+
+    .imagen-ejemplo img{
+        padding: 20px;
+        height: 330px;
+        border-radius: 50px;
+    }
+    
+}
+
+@media (max-width:630px) {
+
+    .importante{
+        color: var(--color-amarillo-claro);
+        font-size: 70px;
+    }
+
+    .imagen-ejemplo img{
+        padding: 20px;
+        height: 290px;
+        border-radius: 50px;
+    }
+    
+}
+
+@media (max-width:520px) {
+
+    .importante{
+        color: var(--color-amarillo-claro);
+        font-size: 60px;
+    }
+
+    .imagen-ejemplo img{
+        padding: 20px;
+        height: 220px;
+        border-radius: 50px;
+    }
+    
+}
+
+@media (max-width:400px) {
+
+    .importante{
+        color: var(--color-amarillo-claro);
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .imagen-ejemplo img{
+        padding: 20px;
+        height: 190px;
+        border-radius: 50px;
+    }
+    
+}
+
+@media (max-width:330px) {
+
+    .importante{
+        color: var(--color-amarillo-claro);
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .imagen-ejemplo img{
+        padding: 20px;
+        height: 160px;
+        border-radius: 50px;
+    }
+    
+}
+
+@media (max-width:270px) {
+
+    .importante{
+        color: var(--color-amarillo-claro);
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .imagen-ejemplo img{
+        padding: 20px;
+        height: 130px;
+        border-radius: 50px;
+    }
+    
+}

@@ -1,0 +1,131 @@
+/*RESETEO DE LOS PARGENES INTERIORES Y EXTERIORES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*ATRIBUTOS GENERALES PREESTABLECIDOS*/
+:root {
+  --color-rojo: #3B732C;
+  /*COLOR REAL #f20519*/
+  --color-naranja: #3B732C;
+  /*COLOR REAL #f25c05*/
+  --color-amarillo-obscuro: #81A677;
+  /*COLOR REAL #f2ab27*/
+  --color-amarillo-claro: #D96523;
+  /*COLOR REAL #f2cb05*/
+  --color-blanco: #F2F2F2;
+  /*COLOR REAL #d2d2d2*/
+  --color-negro: #0D0D0D;
+  /*COLOR REAL #020202*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Roboto';
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  ;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Agrega tus estilos personalizados aquí */
+
+/* Estilos generales */
+body {
+  width: 100%;
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+}
+
+/* Contenedor de la tabla */
+.tabla-boletos {
+  text-align: center;
+}
+
+.contenedor-datos {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+/* Estilos de la tabla */
+table {
+  width: 100%;
+  overflow: auto;
+  border: 5px solid var(--color-naranja);
+  text-align: center;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 5px solid var(--color-naranja);
+}
+
+th {
+  background-color: var(--color-naranja);
+  color: var(--color-blanco);
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-amarillo-obscuro);
+  color: var(--color-negro);
+}
+
+
+.buscador-info {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#campoBusqueda {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn-buscador {
+  margin-top: 10px;
+  background-color: var(--color-naranja);
+  color: var(--color-negro);
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-buscador:hover {
+  background-color: var(--color-blanco);
+  color: var(--color-naranja);
+}
+
+.btn-recarga {
+  text-align: center;
+  margin: 20px;
+}
+
+.btn-recarga button {
+  background-color: var(--color-amarillo-obscuro);
+  color: var(--color-negro);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.btn-recarga button:hover {
+  background-color: var(--color-amarillo-claro);
+}
